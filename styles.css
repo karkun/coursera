@@ -1,43 +1,111 @@
-html{
-    font-family : "Times New Roman";
-    font-size : 12px;
+@import url('https://fonts.googleapis.com/css?family=Cairo:400,600&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Oxygen:400,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oxygen', sans-serif;
 }
 
-.header{
-    background-color: rgb(23, 180, 228);
-    box-sizing: border-box;
-    display: block;
-    height: 100px;
-}
-.container{
-    box-sizing: border-box;
-}
-.header{
-    height: 80px;
-}
-.header > div div{
-    position: relative;
-    margin-left: 10px;
-    margin-right: 10px;
+/*
+.menu{
+    text-align: right;
+    height: inherit;
     float: left;
-    height: 100%;
-    
+    width: 600px;
 }
+
+
+
+.nav ul{
+    list-style-type: none;
+    display: flex;
+    background-color: brown;
+    width: 50%;
+    height: 100%;
+    align-items: center;
+}
+*/
+/*Header*/
+header{
+    width: 80%;
+    margin:auto;
+    display: flex;
+    height: 50px;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    position: sticky;
+    top: 0;
+}
+
+
 .logo{
-    position: relative;
-    height: 100%;
+    cursor: pointer;
+    height: 2.5em;
+    padding-right: 10px;
+    transition: all 0.3s ease 0s;
+}
+.logo:hover{
+    height: 3em;
+    padding-right: 0;
+}
+
+.name{
+    font-size: 2em;
+    color: rgb(12, 8, 85);
+    font-family: 'Cairo', sans-serif ;
+    font-weight: 600;
+    margin-right: auto;
+}
+
+nav{
+    
+    align-items: center;
+    font-size: 1.1em;
+    font-weight: 400;
+}
+.nav-links{
     display: flex;
-    padding: 15px 20px 10px 20px;
-    align-content: center;
-    width: 40px;
+    list-style: none;
+    height: inherit;
+    margin-right: 10px;
+    
     
 }
-h1{
-    position: relative;
-    height: 100%;
-    display: flex;
-    align-content: center;
-    width: 400px;
-    font-size: 36px;
-    color: rgb(4, 3, 56);
+
+
+.nav-links li a{
+    
+    
+    color: rgb(12, 8, 85);
+    text-decoration: none;
+    padding: 15px 20px;
+    transition: all 0.3s ease 0s;
+    
 }
+.nav-links li a:hover{
+    background-color: rgb(238, 160, 16);
+}
+
+.cta{
+    display: flex;
+    padding: 8px 12px;
+    text-decoration: none;
+    background-color: rgb(12, 8, 85);
+    border-radius: 5px;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    transition: all 0.3s ease 0s;
+}
+.cta:hover{
+    background-color: rgb(238, 160, 16);
+    color: rgb(12, 8, 85);
+}
+/*End of Header*/
+.container{
+    width: 80%;
+    margin:auto;
+    margin-top: 50px;
+    display: flex;
+}
+
