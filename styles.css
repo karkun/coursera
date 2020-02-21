@@ -46,6 +46,7 @@ header{
     flex: 3;
 }
 nav{
+    
     flex: 2;
 }
 
@@ -73,24 +74,28 @@ nav{
 nav{
     font-size: 1.2em;
     font-weight: 400;
-    margin: auto 30px auto 30px;
 }
+
 .nav-links{
-    justify-content: space-around;
     list-style: none;
     
 }
 
+.nav-links li{
+    padding: 12px 15px;
+    transition: all 0.3s ease 0s;
+}
+.nav-links li:hover{
+    background-color: rgb(238, 160, 16);
+}
 .nav-links li a{
-    height: inherit;
     color: rgb(12, 8, 85);
     text-decoration: none;
     transition: all 0.3s ease 0s;
     
 }
-.nav-links li a:hover{
-    background-color: rgb(238, 160, 16);
-}
+
+
 
 .cta{
     font-size: 1.2em;
@@ -102,11 +107,12 @@ nav{
     color: rgb(255, 255, 255);
     transition: all 0.3s ease 0s;
 }
+
 .cta:hover{
     background-color: rgb(238, 160, 16);
     color: rgb(12, 8, 85);
 }
-/*
+
 /*End of Header*/
 /*
 .container{
