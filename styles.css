@@ -34,9 +34,8 @@ header{
     height: 10vh;
     align-items: center;
     background-color: rgb(255, 255, 255);
-    /*
     position: sticky;
-    top: 0;*/
+    top: 0;
 }
 .brand,.nav-links,.cta{
     display: flex;
