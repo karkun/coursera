@@ -7,6 +7,7 @@
     font-family: 'Oxygen', sans-serif;
 }
 
+
 /*
 .menu{
     text-align: right;
@@ -27,15 +28,27 @@
 }
 */
 /*Header*/
+.hc{
+    display: flex;
+    width: 100%;
+       
+    height: 10vh;
+    position: fixed;
+    z-index:    2000;
+    background-color: rgb(255, 255, 255);
+
+    border-bottom: 1px solid rgb(173, 173, 173);
+    box-shadow: 0px 5px 12px -8px #a7a5a5;
+}
 header{
+    
     display: flex;
     width: 80%;
-    margin:auto;    
-    height: 10vh;
+    margin:auto; 
     align-items: center;
-    background-color: rgb(255, 255, 255);
+    /*background-color: rgb(255, 255, 255);
     position: sticky;
-    top: 0;
+    top: 0;*/
 }
 .brand,.nav-links,.cta{
     display: flex;
@@ -43,7 +56,7 @@ header{
 
 .brand{
     align-items: center;
-    flex: 3;
+    flex: 2;
 }
 nav{
     
@@ -53,18 +66,18 @@ nav{
 
 .logo{
     cursor: pointer;
-    height: 2.5em;
+    height: 2.6em;
     padding-right: 10px;
     transition: all 0.3s ease 0s;
 }
 
 .logo:hover{
-    height: 3em;
     padding-right: 0;
+    height: 3.2em;
 }
 
 .name{
-    font-size: 2em;
+    font-size: 1.8em;
     color: rgb(12, 8, 85);
     font-family: 'Cairo', sans-serif ;
     font-weight: 600;
@@ -72,17 +85,17 @@ nav{
 }
 
 nav{
-    font-size: 1.2em;
+    font-size: 1.1em;
     font-weight: 400;
 }
 
 .nav-links{
     list-style: none;
-    
+    justify-content: center;
 }
 
 .nav-links li{
-    padding: 12px 15px;
+    padding: 12px 30px;
     transition: all 0.3s ease 0s;
 }
 .nav-links li:hover{
@@ -95,11 +108,11 @@ nav{
     
 }
 
-
+/*
 
 .cta{
-    font-size: 1.2em;
-    padding: 6px 10px;
+    font-size: 1.1em;
+    padding: 8px 15px;
     text-decoration: none;
     background-color: rgb(12, 8, 85);
     border-radius: 5px;
@@ -112,13 +125,20 @@ nav{
     background-color: rgb(238, 160, 16);
     color: rgb(12, 8, 85);
 }
-
+*/
+a.cta{
+    max-width: fit-content;
+}
+.cta img{
+    height:3em;
+}
 /*End of Header*/
-/*
+
 .container{
     width: 80%;
+    text-align: justify;
     margin:auto;
-    margin-top: 50px;
     display: flex;
 }
-*/
+
+
