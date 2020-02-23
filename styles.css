@@ -90,16 +90,21 @@ nav{
 }
 
 nav{
+    height: inherit;
     font-size: 1.1em;
     font-weight: 400;
 }
 
 .nav-links{
+    margin-left: auto;
+    width: fit-content;
+    height: inherit;
     list-style: none;
-    justify-content: flex-end;
+    justify-content: center;
 }
 
 .nav-links li{
+    display: flex;align-items: center;
     padding: 0px 2vw;
     transition: all 0.3s ease 0s;
 }
@@ -132,8 +137,8 @@ nav{
 }
 */
 a.cta{
-    width: 6vh;
-    justify-content: center;
+    width: 4vw;
+    justify-content: flex-end;
 }
 .cta img{
     height:2.5em;
@@ -286,6 +291,7 @@ button{
 h1{
     color: rgb(69, 165, 255);
 }
+
 .reg{
     display: flex;
     flex-direction: column;
