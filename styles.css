@@ -136,7 +136,7 @@ a.cta{
     justify-content: center;
 }
 .cta img{
-    height:6vh;
+    height:2.5em;
     transition: all 0.3s ease;
 }
 
