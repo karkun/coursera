@@ -41,8 +41,8 @@
     z-index:    2000;
     background-color: rgb(255, 255, 255);
 
-    border-bottom: 1px solid rgb(173, 173, 173);
-    box-shadow: 0px 5px 12px -8px #a7a5a5;
+    /*border-bottom: 1px solid rgb(173, 173, 173);*/
+    box-shadow: 0px 3px 10px -5px #a7a5a5;
 }
 header{
     
@@ -96,7 +96,7 @@ nav{
 
 .nav-links{
     list-style: none;
-    justify-content: center;
+    justify-content: flex-end;
 }
 
 .nav-links li{
@@ -132,19 +132,79 @@ nav{
 }
 */
 a.cta{
-    max-width: fit-content;
+    width: 6vw;
+    justify-content: center;
 }
 .cta img{
-    height:3em;
+    height:2.8em;
+    transition: all 0.3s ease;
 }
 
+.cta img:hover{
+    height: 3.2em;
+}
 /*End of Header*/
 
 .container{
-    width: 80%;
-    text-align: justify;
-    margin:auto;
+    height: 90vh;
     display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
 }
+
+.login{
+    width: 30%;
+    position: relative;
+    height: 50px;
+    overflow: hidden;
+}
+.login input{
+    width: 100%;
+    height: 100%;
+    padding-top: 20px;
+    border: none;
+    outline: none;
+}
+.login label{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    border-bottom: 1px solid black;
+}
+.login label::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-bottom: 1px solid rgb(69, 165, 255);
+    box-shadow: 0px 5px 15px -10px rgb(69, 165, 255);
+    left: 0px;
+    bottom: -1px;
+    transform: translateX(-100%);
+    transition: all 0.3s ease;
+}
+.content-name{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    font-size: 1.1em;
+    font-family: 'Cairo', sans-serif ;
+    transition: all 0.3s ease;
+}
+
+.login input:focus + label .content-name, .login input:valid + label .content-name{
+    transform: translateY(-120%);
+    font-size: 14px;
+    color: rgb(69, 165, 255);
+}
+.login input:focus + label::after, .login input:valid + label::after{
+    transform: translateX(0%);
+}
+    
+
 
 
