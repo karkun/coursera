@@ -100,7 +100,7 @@ nav{
 }
 
 .nav-links li{
-    padding: 12px 2vw;
+    padding: 0px 2vw;
     transition: all 0.3s ease 0s;
 }
 .nav-links li:hover{
