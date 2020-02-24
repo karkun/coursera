@@ -280,8 +280,8 @@ a.cta{
 button{
     width: 100%;
     margin: 20px;
-    height: 12%;
-    margin: 8vh 0px 5vh 0px;
+    height: 10%;
+    margin: 5vh 0px 2vh 0px;
     border: none;
     font-size: 1.1em;
     border-radius: 20px;
@@ -293,7 +293,7 @@ button{
 }
 h1{
     color: rgb(69, 165, 255);
-    margin-bottom: 100px;
+    margin-bottom: 10vh;
 }
 
 .reg{
