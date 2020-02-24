@@ -215,7 +215,7 @@ a.cta{
 }
 
 .name-input input:focus + .lname .content-name, .name-input input:valid + .lname .content-name{
-    transform: translateY(-80%);
+    transform: translateY(-60%);
     font-size: 14px;
     color: rgb(69, 165, 255);
 }
@@ -269,7 +269,7 @@ a.cta{
 }
 
 .pwd-input input:focus + .pwd .content-pwd, .pwd-input input:valid + .pwd .content-pwd{
-    transform: translateY(-80%);
+    transform: translateY(-60%);
     font-size: 14px;
     color: rgb(69, 165, 255);
 }
